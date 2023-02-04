@@ -11,7 +11,10 @@ async function getData(name) {
   loader(true)
   const request = await fetch(BASE_API + name)
   const data = await request.json()
-  loader(false)
+  
+  if (data.country.length === 0) {
+    loader(false)
+  }
 
   renderNations(data)
 }
@@ -22,6 +25,8 @@ async function getCountryData(country) {
   const requestCountries = await fetch(BASE_COUNTRY_API + country)
   const data = requestCountries.json()
 
+  loader(false)
+  
   return data
 }
 
