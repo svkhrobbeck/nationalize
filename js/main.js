@@ -45,7 +45,7 @@ function renderNations(nations) {
   const nationsList = nations.country
   let html = ""
 
-  elItem.querySelector("[data-item-name]").textContent = `searched name: ${nations.name}`
+  elItem.querySelector("[data-item-name]").textContent = `Searched Name: ${nations.name}`
 
   nationsList.forEach(nation => {
     getCountryData(nation.country_id).then(data => {
