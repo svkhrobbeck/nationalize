@@ -11,9 +11,11 @@ async function getData(name) {
   loader(true)
   const request = await fetch(BASE_API + name)
   const data = await request.json()
-  
+
   if (data.country.length === 0) {
     loader(false)
+    elInfoList.innerHTML = `<li><p class="card-item__nation">Name not Found!</p></li>`
+    return
   }
 
   renderNations(data)
@@ -26,7 +28,7 @@ async function getCountryData(country) {
   const data = requestCountries.json()
 
   loader(false)
-  
+
   return data
 }
 
