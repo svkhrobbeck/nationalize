@@ -187,6 +187,21 @@ body {
   text-align: center;
 }
 
+.info__item-name-text {
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+@media only screen and (max-width: 768px) {
+  .info__item-name-text {
+    font-size: 23px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .info__item-name-text {
+    font-size: 19px;
+  }
+}
+
 .card-item__nation {
   font-size: 24px;
 }

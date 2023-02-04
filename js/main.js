@@ -45,6 +45,8 @@ function renderNations(nations) {
   const nationsList = nations.country
   let html = ""
 
+  elItem.querySelector("[data-item-name]").textContent = `searched name: ${nations.name}`
+
   nationsList.forEach(nation => {
     getCountryData(nation.country_id).then(data => {
       html += `<p class="card-item__nation" data-item-nation-text>${data[0].fifa} <small>(${data[0].name.common})</small> - ${((nation.probability) * 100).toFixed(1)}%</p>`
