@@ -38,7 +38,7 @@ img {
 
 body {
   height: 100%;
-  font-family: "Arial", sans-serif;
+  font-family: "Barlow", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: var(--text-color);
@@ -190,6 +190,7 @@ body {
 .info__item-name-text {
   margin-bottom: 15px;
   font-size: 28px;
+  font-weight: 600;
 }
 @media only screen and (max-width: 768px) {
   .info__item-name-text {
