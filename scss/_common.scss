@@ -2,6 +2,7 @@
 :root {
   --primary-bg-color: #fff;
   --text-color: #000;
+  --element-bg: #fafafa;
 }
 
 /* GLOBAL */
@@ -44,6 +45,13 @@ body {
   background-color: var(--primary-bg-color);
   display: flex;
   flex-direction: column;
+  transition: background-color .5s ease, color .5s ease;
+}
+
+.dark-mode {
+  --primary-bg-color: #202c36;
+  --text-color: #fff;
+  --element-bg: #2b3844;
 }
 
 /* SCROLL BAR */
@@ -89,6 +97,11 @@ body {
 .main-content {
   flex-grow: 1;
   padding: 50px 0;
+  transition: padding .5s ease;
+
+  @media only screen and (max-width: $tablet) {
+    padding: 65px 0;
+  }
 }
 
 /* BUTTON */

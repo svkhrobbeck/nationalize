@@ -1,7 +1,14 @@
+.info__list {
+  text-align: center;
+}
+
 .card-item__nation {
-  display: block;
   font-size: 24px;
 
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  
   @media only screen and (max-width: $tablet) {
     font-size: 20px;
   }
