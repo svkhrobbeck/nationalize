@@ -105,6 +105,28 @@ body {
   }
 }
 
+.main-content__title {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+@media only screen and (max-width: 992px) {
+  .main-content__title {
+    font-size: 19px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main-content__title {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .main-content__title {
+    font-size: 16px;
+  }
+}
+
 /* BUTTON */
 .button {
   display: inline-block;
