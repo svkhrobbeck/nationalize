@@ -1,0 +1,12 @@
+.card-item__nation {
+  display: block;
+  font-size: 24px;
+
+  @media only screen and (max-width: $tablet) {
+    font-size: 20px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    font-size: 18px;
+  }
+}

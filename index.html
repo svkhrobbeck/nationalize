@@ -1,37 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nationalize</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project</title>
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="images/"> -->
 
-  <!-- Favicon -->
-  <!-- <link rel="shortcut icon" href="images/"> -->
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-</head>
+  <body>
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <div class="container">
+        <!-- SEARCH -->
+        <form class="search-from" data-search-form>
+          <div class="form-fields">
+            <label class="search-form__label" for="search">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.5 11H11.7L11.4 10.7C12.4 9.6 13 8.1 13 6.5C13 2.9 10.1 0 6.5 0C2.9 0 0 2.9 0 6.5C0 10.1 2.9 13 6.5 13C8.1 13 9.6 12.4 10.7 11.4L11 11.7V12.5L16 17.5L17.5 16L12.5 11ZM6.5 11C4 11 2 9 2 6.5C2 4 4 2 6.5 2C9 2 11 4 11 6.5C11 9 9 11 6.5 11Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </label>
+            <input
+              class="search-form__input"
+              type="search"
+              placeholder="Search name"
+              aria-label="Search name"
+              name="search"
+              id="search"
+              data-search-input
+            />
+          </div>
+        </form>
+        <!-- /SEARCH -->
 
-<body>
+        <!-- INFO -->
+        <section class="info">
+          <ul class="info__list" data-info-list></ul>
+        </section>
+        <!-- /INFO -->
+      </div>
+    </main>
+    <!-- /MAIN CONTENT -->
 
-  <!-- HEADER -->
-  <!-- /HEADER -->
+    <!-- TEMPLATE -->
+    <template data-info-item-template>
+      <li class="info__item">
+        <div class="info__item-inner card-item" data-card-item-inner></div>
+      </li>
+    </template>
+    <!-- /TEMPLATE -->
 
-  <!-- MAIN CONTENT -->
-  <main class="main-content">
-  </main>
-  <!-- /MAIN CONTENT -->
-
-  <!-- FOOTER -->
-  <!-- /FOOTER -->
-
-
-  <!-- SCRIPTS -->
-  <!-- <script src="js/main.js"></script> -->
-
-</body>
-
+    <!-- SCRIPTS -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
