@@ -14,7 +14,7 @@ async function getData(name) {
 
   if (data.country.length === 0) {
     loader(false)
-    elInfoList.innerHTML = `<li><p class="card-item__nation">Name not Found!</p></li>`
+    elInfoList.innerHTML = `<li><p class="card-item__nation">Name Not Found!</p></li>`
     return
   }
 
